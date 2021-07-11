@@ -2,8 +2,6 @@ import Foundation
 import Alamofire
 import Combine
 
-// https://newsapi.org/v2/everything?q=Apple&from=2021-05-08&sortBy=popularity&apiKey=API_KEY
-
 class Network {
     
     struct Session: Codable {
