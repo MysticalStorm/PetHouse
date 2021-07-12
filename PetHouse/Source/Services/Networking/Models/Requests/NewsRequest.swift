@@ -1,6 +1,6 @@
 struct NewsRequest: RequestProtocol {
   enum Endpoint: String, EndpointProtocol {
-    case petNews = "dog husky"
+    case petNews = "dog"
   }
   
   let endpoint: Endpoint

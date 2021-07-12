@@ -5,6 +5,12 @@ struct ArticleCell: View {
   let article: Article
   
   @State var offset: CGFloat = -1000
+  @Binding var animate: Bool
+  
+  init(article: Article, animate: Binding<Bool>) {
+    self.article = article
+    _animate = animate
+  }
   
   var body: some View {
     VStack(alignment: .leading) {
@@ -45,11 +51,15 @@ struct ArticleCell: View {
     .background(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))
     .cornerRadius(10)
     .padding([.leading, .trailing], 10)
-    .offset(y: offset)
+    .offset(y: animate ? offset : 0)
     .onAppear {
       let baseAnimation = Animation.easeInOut(duration: 1)
-      //              let repeated = baseAnimation.repeatForever(autoreverses: true)
-      withAnimation(baseAnimation) {
+      
+      if animate {
+        withAnimation(baseAnimation) {
+          offset = 0
+        }
+      } else {
         offset = 0
       }
     }
@@ -65,7 +75,7 @@ struct ArticleCell_Previews: PreviewProvider {
                                  publishedAt: "10:10 2010",
                                  title: "This is title",
                                  url: "www.image.com",
-                                 urlToImage: "www.image.com"))
+                                 urlToImage: "www.image.com"), animate: .constant(false))
       .previewDevice("iPhone 12 Pro")
   }
 }
