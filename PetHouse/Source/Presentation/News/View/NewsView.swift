@@ -6,11 +6,15 @@ struct NewsView: View {
   var body: some View {
     VStack {
       ScrollView {
-        ForEach(viewModel.currentNews, id:\.title) {
-          ArticleCell(article: $0)
+        LazyVStack(spacing: 10) {
+          ForEach(viewModel.currentNews, id:\.title) {
+            ArticleCell(article: $0)
+          }
         }
       }
     }
+    .padding(.top)
+    .background(Color.black)
     .onAppear(perform: viewModel.refreshNews)
   }
 }

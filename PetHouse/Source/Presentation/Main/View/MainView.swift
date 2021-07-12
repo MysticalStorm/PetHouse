@@ -8,7 +8,10 @@ struct MainView: View {
       TabView {
         NewsView(viewModel:
                   NewsViewModel(dataProvider: viewModel.makeNewsDataProvider()))
-          .tabItem { Text("News") }
+          .tabItem {
+            Image(systemName: "cloud")
+            Text("News")
+          }
         Rectangle()
           .fill(Color.yellow)
           .tabItem { Text("Community") }
@@ -19,6 +22,13 @@ struct MainView: View {
           .fill(Color.black)
           .tabItem { Text("Account") }
       }
+    }
+    .preferredColorScheme(.dark)
+    .onAppear {
+      UITabBar.appearance().barTintColor = .black
+      UITabBar.appearance().tintColor = .white
+      UITabBar.appearance().layer.borderColor = UIColor.clear.cgColor
+      UITabBar.appearance().clipsToBounds = true
     }
   }
 }

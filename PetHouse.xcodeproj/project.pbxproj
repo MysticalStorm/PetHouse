@@ -16,7 +16,6 @@
 		14364FB92645AF020093F9C9 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14364FB82645AF020093F9C9 /* Network.swift */; };
 		14364FC126468ABE0093F9C9 /* Api.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14364FC026468ABE0093F9C9 /* Api.plist */; };
 		14364FC626468DF60093F9C9 /* ApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14364FC526468DF60093F9C9 /* ApiKey.swift */; };
-		14868F7C26482235006557E8 /* NewsRequest22.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14868F7B26482235006557E8 /* NewsRequest22.swift */; };
 		14868F7E264826DE006557E8 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14868F7D264826DE006557E8 /* Config.swift */; };
 		AE2C2A361CF1ACB3C7D4D3CD /* Pods_PetHouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 690227E5AB05C8E2EB635DCD /* Pods_PetHouse.framework */; };
 		CE58C628269B507000DA1CA0 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58C627269B507000DA1CA0 /* MainViewModel.swift */; };
@@ -44,7 +43,6 @@
 		14364FB82645AF020093F9C9 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		14364FC026468ABE0093F9C9 /* Api.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Api.plist; sourceTree = "<group>"; };
 		14364FC526468DF60093F9C9 /* ApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKey.swift; sourceTree = "<group>"; };
-		14868F7B26482235006557E8 /* NewsRequest22.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRequest22.swift; sourceTree = "<group>"; };
 		14868F7D264826DE006557E8 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		23237066B2D342C8E9BFAF5A /* Pods-PetHouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetHouse.debug.xcconfig"; path = "Target Support Files/Pods-PetHouse/Pods-PetHouse.debug.xcconfig"; sourceTree = "<group>"; };
 		62165E957294C12BBA7186A5 /* Pods-PetHouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetHouse.release.xcconfig"; path = "Target Support Files/Pods-PetHouse/Pods-PetHouse.release.xcconfig"; sourceTree = "<group>"; };
@@ -196,7 +194,6 @@
 				CED8C173269B562D00A6297B /* Requests */,
 				CE58C631269B537B00DA1CA0 /* News */,
 				14364FC526468DF60093F9C9 /* ApiKey.swift */,
-				14868F7B26482235006557E8 /* NewsRequest22.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -453,7 +450,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14868F7C26482235006557E8 /* NewsRequest22.swift in Sources */,
 				14364FC626468DF60093F9C9 /* ApiKey.swift in Sources */,
 				14364F892645ACFE0093F9C9 /* AppDelegate.swift in Sources */,
 				CE58C62E269B512600DA1CA0 /* NewsView.swift in Sources */,
